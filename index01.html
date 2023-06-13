@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container1 {
+  position: relative;
+  /* text-align: center; */
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inp{
+    width: 358px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 10px;
+    border: 1px white;
+}
+
+.search{
+    width: 70px;
+  height: 40px;
+  
+  border: #FFFFFF;
+  background: #FF914D;
+}
+
+.sear{
+    font-size: 30px;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    margin: 0 100px;
+   font-size:1vw;
+}
+img{
+    width: 100%;
+}
+
+/* .testimonies{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 70px;
+ height: 300px;
+
+}
+.testimony2{
+    background-color: #D9D9D9;
+}
+
+.round {
+    border-radius: 50%;
+    width: 145px;
+height: 143px;
+} */
+
+
+.testimonies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 0 100px;
+}
+
+.testimony {
+  /* Styles for the first grid section */
+}
+
+.testimony2 {
+ background-color: #ccc;
+ padding: 10px;
+ text-align: center;
+}
+
+/* Example styles for the elements within the grid sections */
+.testimony img {
+  width: 300px;
+  height: 300px;
+}
+
+.testimony2 h2 {
+  font-size: 24px;
+}
+
+.testimony2 img.round {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.testimony2 p {
+  font-style: italic;
+}
+
+.testimony2 span {
+  font-weight: bold;
+}
+.events{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container1">
+  <img src="https://images.primeagile.com/whats2eat_org/image/11151/banner.webp" alt="Snow" style="width:100%;">
+  <div class="centered3">
+    <h1>RECIPES</h1>
+
+    <form action="">
+        <span class="sear">search for your favorite recipe</span> <br>
+        <input type="text" class="inp"> <br> <br>
+        <button class="search">SEARCH</button>
+    </form>
+  </div>
+</div>
+
+<main>
+ <div class="col-3">
+    <div class="format">
+        <h2>MILK SHAKE</h2>
+        <picture>
+            <img src="https://images.primeagile.com/whats2eat_org/image/11205/chocolate-2349916_1920.jpg" alt="">
+        </picture>
+
+    </div>
+
+    <div class="format">
+        <h2>SUSHI</h2>
+        <picture>
+            <img src="https://images.primeagile.com/whats2eat_org/image/11204/food-3581341_1920.jpg" alt="">
+        </picture>
+
+    </div>
+
+    <div class="format">
+        <h2>BURGER</h2>
+        <picture>
+            <img src="https://images.primeagile.com/whats2eat_org/image/11203/beef-1239198_1920.jpg" alt="">
+        </picture>
+
+    </div>
+
+    <div class="format">
+        <h2>CHEESE CAKE</h2>
+        <picture>
+            <img src="https://images.primeagile.com/whats2eat_org/image/11201/apple-pie-5870538_1920.jpg" alt="">
+        </picture>
+
+    </div>
+
+    <div class="format">
+        <h2>APPLE PIE</h2>
+        <picture>
+            <img src="https://images.primeagile.com/whats2eat_org/image/11202/cheesecake-1578694_1920.jpg" alt="">
+        </picture>
+
+    </div>
+
+ </div>
+
+</main>
+
+<br>
+<br>
+<div class="testimonies">
+    <div class="testimony" >
+      <img src="https://images.primeagile.com/whats2eat_org/image/11208/man-890885_1920-removebg-preview.png" alt="">
+    </div>
+
+    <div class="testimony2" >
+        <h2>TESTIMONES</h2>
+        <img src="https://images.primeagile.com/whats2eat_org/image/11210/img_4542.jpg" class="round" alt="">
+        <p>"I am thrilled to share my experience with whats to eat, a truly exceptional platform for all food lovers out there. As an avid foodie and home cook, I have explored numerous food websites over the years, but none have impressed me as much as whats to eat.”</p>
+        <span>ANESU SHANGWA</span>
+      </div>
+
+
+</div>
+ <br> <br>
+<div class="events">
+    <h2>UP COMING EVENTS</h2>
+    <P>2 Week Boot Camp for cooking classes at the  HARARE HALL. For inquiries, You may call us today at +263 774 998 764</P>
+
+</div>
+
+</body>
+</html> 
